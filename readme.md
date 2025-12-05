@@ -17,5 +17,5 @@ Basic Flow locally:
 > - Checks what status the changes are in: git status
 > - Add to staging (ready to commit to local branch): git add .
 > - Commit changes to local branch: git commit -m "Insert meaningful message here"
-> - Would appreciate if you make a pull request before pushing changes to feature branches, but otherwise can use: git push origin branch-name
+> - Would appreciate if you make a pull request before pushing changes to feature branches, but otherwise can use: git push -u origin branch-name
 > - Don't push to main til we review it together lol
