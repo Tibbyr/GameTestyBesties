@@ -26,9 +26,11 @@
   "name":"Testing Grounds",
   "resources":[
     {"id":{"name":"ReadMe","path":"notes/ReadMe/ReadMe.yy",},},
+    {"id":{"name":"ob_enemy2","path":"objects/ob_enemy2/ob_enemy2.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_rogue","path":"objects/obj_rogue/obj_rogue.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Ground","path":"sprites/Ground/Ground.yy",},},
