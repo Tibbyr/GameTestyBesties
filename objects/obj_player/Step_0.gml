@@ -89,15 +89,24 @@ if (am_I_dashing) {
 
 move_and_collide(_horizontal * _speed, _vertical * _speed, tilemap, undefined, undefined, undefined, _speed, _speed)
 
+// Setting sprites based on movement input
 if (_horizontal != 0 or _vertical != 0){
     if (_vertical > 0) sprite_index = spr_player_walk_down;
     else if (_vertical < 0) sprite_index = spr_player_walk_up;
     else if (_horizontal > 0) sprite_index = spr_player_walk_right;
     else if (_horizontal < 0) sprite_index = spr_player_walk_left;
 }
-else{
+else{ // setting idle sprites if 0 and last known sprite
     if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
     else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
     else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
     else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
+}
+
+
+// TODO: This is pretty barbaric, this doesn't take into consideration anything you've collected in the level so far, so it'd be nice to either have instance variables read from a player config file maybe?
+// TODO: This also resets all instances of enemies back to their starting positions, need to figure out if this makes sense
+// TODO: Need a game over screen, maybe a controllable room where you can select Yes or No to continue with the character?
+if (hp <= 0){
+    game_restart();
 }

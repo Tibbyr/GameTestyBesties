@@ -15,6 +15,11 @@ dash_timer_down  = 0;
 dash_timer_left  = 0;
 dash_timer_right = 0;
 
+// Battle related
+hp = 10;
+hp_total = hp;
+damage = 1;
+charge = 0;
 
 
 // Barriers/Collisions
